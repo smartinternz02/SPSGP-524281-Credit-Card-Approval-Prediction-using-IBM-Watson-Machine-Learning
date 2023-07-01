@@ -2,4 +2,5 @@
 Credit Card Approval Prediction using IBM Watson Machine Learning
 
 video demonstration link :
-https://drive.google.com/file/d/11-AcHXK1euXqKfMUduU71H-NACyIXOml/view
+[Video demonstration](https://drive.google.com/file/d/11-AcHXK1euXqKfMUduU71H-NACyIXOml/view?usp=sharing)
+
