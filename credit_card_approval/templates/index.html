@@ -1,0 +1,157 @@
+<html>
+<head>
+    <meta charset="uft-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("https://assets-news.housing.com/news/wp-content/uploads/2022/08/30071256/VISA-CREDIT-CARD-FEATURE-compressed-686x400.jpg");
+    background-size: 100%;
+}
+
+div.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+}
+
+div.card{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgda(255,255,255,0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+form#card{
+    margin: 40px;
+}
+
+label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+input#name{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+
+label, h2{
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+        
+    </style>
+</head>
+<body>
+<div class="main">
+<div class="card">
+        <h2>Credit Card Approval</h2>
+        <form id="card" action = '/login' method= "post">
+        <label>CNT_CHILDREN</label><br>
+        <input type="text" name = "cc" id="name" required><br><br>
+        <label>AMT_INCOME_TOTAL</label><br>
+        <input type="text"  name = "ait" id="name" required><br><br>
+        <label>CNT_FAM_MEMBERS</label><br>
+        <input type="text"  name = "cfm" id="name" required><br><br>
+        <label>MONTHS_BALANCE</label><br>
+        <input type="text"  name = "mb" id="name" required><br><br>
+        <label>AGE</label><br>
+        <input type="text" name="a" id="name" required><br><br>
+        <label>WORKEXP</label><br>
+        <input type="text"  name = "w" id="name" required><br><br>
+        <label for = "gender">CODE_GENDER</label>
+        <select name ="cg">
+        <option Value = "m">Male</option>
+        <option Value = "f">Female</option>
+        </select><br><br>
+        <label for = "own_car">FLAG_OWN_CAR</label>
+        <select name ="foc">
+        <option Value = "y">Yes</option>
+        <option Value = "n">No</option>
+        </select><br><br>
+        <label for = "realestate">FLAG_OWN_REALTY</label>
+        <select name ="for">
+        <option Value = "yes">Yes</option>
+        <option Value = "no">No</option>
+        </select><br><br>
+        <label for = "income_type">NAME_INCOME_TYPE</label>
+        <select name ="nit">
+        <option Value = "ca">Commercial associate</option>
+        <option Value = "p">Pensioner</option>
+        <option Value = "ss">State servant</option>
+        <option Value = "s">Student</option>
+        <option Value = "w">Working</option>
+        </select><br><br>
+        <label for = "education_type">NAME_EDUCATION_TYPE</label>
+        <select name ="net">
+        <option Value = "ad">Academic degree </option>
+        <option Value = "he">Higher education </option>
+        <option Value = "ih">Incomplete higher</option>
+        <option Value = "ls">Lower secondary</option>
+        <option Value = "sss">Secondary / secondary special</option>
+        </select><br><br>
+        <label for = "family_status">NAME_FAMILY_STATUS</label>
+        <select name ="nfs">
+        <option Value = "cm">Civil marriage </option>
+        <option Value = "m">Married </option>
+        <option Value = "se">Separated</option>
+        <option Value = "snm">Single / not married </option>
+        <option Value = "wi">Widow</option>
+        </select><br><br>
+        <label for = "housing_type">NAME_HOUSING_TYPE</label>
+        <select name ="nht">
+        <option Value = "coa">Co-op apartment </option>
+        <option Value = "ha">House / apartment </option>
+        <option Value = "ma">Municipal apartment </option>
+        <option Value = "oa">Office apartment</option>
+        <option Value = "ra">Rented apartment</option>
+        <option Value = "wp">With parents</option>
+        </select><br><br>
+        <div class="form-submit-btn">
+            <input type="submit" value="Predict">
+        </div>
+        </form> 
+</div>
+</div>
+</body>
+</html>
